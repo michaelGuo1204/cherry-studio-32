@@ -24,7 +24,7 @@
     "build:check": "yarn test && yarn typecheck && yarn check:i18n",
     "build:unpack": "dotenv npm run build && electron-builder --dir",
     "build:win": "dotenv npm run build && electron-builder --win",
-    "build:win": "dotenv npm run build && electron-builder --win --ia32",
+    "build:win:x32": "dotenv npm run build && electron-builder --win --ia32",
     "build:win:x64": "dotenv npm run build && electron-builder --win --x64",
     "build:mac": "dotenv electron-vite build && electron-builder --mac",
     "build:mac:arm64": "dotenv electron-vite build && electron-builder --mac --arm64",
